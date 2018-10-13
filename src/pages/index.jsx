@@ -3,56 +3,63 @@ import React from 'react'
 import Layout from '../components/layout'
 import Container from '../components/common/Container/styled'
 import Header from '../components/common/Header'
+import Footer from '../components/common/Footer'
 import PageTitle from '../components/common/PageTitle'
 import Intro from '../components/common/Intro'
-// import ResponsiveImage from '../components/common/ReponsiveImage'
-import ImageWrapper from '../components/common/ImageWrapper/styled'
-import Button from '../components/common/Button/'
-import CasePreview from '../components/common/CasePreview'
+import Button from '../components/common/Button'
+import List from '../components/common/List'
+import Column from '../components/common/Container/Column/styled'
 
-const IndexPage = ({data}) => {
-  const casePreviewData = data.allMarkdownRemark.edges
-  return (
-    <Layout>
-      <Header paddingTop="xxxl" paddingBottom="xxxl" >
-        <PageTitle 
-          title="Wij zijn "
-          highlight="Wavelight,"
-        />
-        <Intro content="en hier kan je zien wat we doen,
-        kunnen en most of all leuk vinden." />
-      </Header>
-      <ImageWrapper imageSize="60%">
-        {/* <ResponsiveImage image={data}/> */}
-      </ImageWrapper>
-      <Container as="section" paddingTop="xxxl" paddingBottom="xxxl">
-        <q>Jong, creatief, ambitieus en flexibel.
-        Dat zijn wij, wavelight. Een creative studio met 3 verschillende dicipline
-        Design, Development & Marketing</q>
-        <Button value="Mail ons!"/>
-        <p>Please…vinden we leuk</p>
+const IndexPage = () => (
+  <Layout>
+    <Header paddingTop="xxl" paddingBottom="xxl">
+      <PageTitle title="Hallo, Wij zijn " highlight="Wavelight" />
+      <Intro content="En wij zijn druk bezig met onze eigen website.." />
+    </Header>
+    <Container as="section" paddingBottom="xxl">
+      <p>
+        Een digitaal bureau dat zich sterk focust op design, development en
+        strategy marketing. Bij Wavelight krijg je een beetje van alles wat.
+        Mooie designs, sterke concepten, rendabele campagnes en een biertje als
+        afsluiter. Samen werken we aan de mooiste digitale oplossingen voor jou.
+        Mooi toch?
+      </p>
+      <Button
+        href="mailto:hello@wavelight.co"
+        as="a"
+        inverted
+        value="Mail ons"
+      />
+    </Container>
+    <Footer>
+      <Container as="header" paddingBottom="md">
+        <PageTitle title="Laten we praten!" />
+        <Intro content="Vinden we leuk" />
       </Container>
-      <CasePreview data={casePreviewData} />
-    </Layout>
-  )
-}
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            subtitle
-          }
-          htmlAst
-        }
-      }
-    }
-  }
-`
+      <Container withFlex>
+        <Column columnWidth="50%">
+          <List>
+            <li>
+              <a href="mailto:hello@wavelight.co">hello@wavelight.co</a>
+            </li>
+            <li>
+              <a href="tel:0611451081">+31 6 11 45 10 81</a>
+            </li>
+          </List>
+        </Column>
+        <Column columnWidth="50%">
+          <List>
+            <li>
+              <p>Weena 125</p>
+            </li>
+            <li>
+              <p>3013 CK Rotterdam</p>
+            </li>
+          </List>
+        </Column>
+      </Container>
+    </Footer>
+  </Layout>
+)
 
 export default IndexPage
