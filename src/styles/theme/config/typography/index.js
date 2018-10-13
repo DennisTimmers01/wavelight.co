@@ -1,14 +1,14 @@
-const scaleRatio = 1.25
-const baseFontSize = '16px';
+const scaleRatio = 1.3
+const baseFontSize = '16px'
 
 const typographySettings = {
   base: {
     header: {
-      font: 'heebo',
+      font: 'basiercircle-bold',
       lineHeight: 1.3,
     },
     body: {
-      font: 'arvo',
+      font: 'basiercircle-regular',
       lineHeight: 1.5,
     },
   },

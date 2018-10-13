@@ -3,11 +3,12 @@ import spacingSettings from './config/spacing'
 const theme = {
   colors: {
     primary: '#3D77EA',
-    primaryLight: '#A4C2FF',
+    primaryLight: '#B1B1B1',
     secondary: '#2A2A2A',
-    white: '#FFFFFF'
+    white: '#FFFFFF',
+    textColor: '#000000',
   },
-  ...spacingSettings
-};
+  ...spacingSettings,
+}
 
-export default theme;
+export default theme

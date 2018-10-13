@@ -6,6 +6,18 @@ import spacingSettings from '../config/spacing'
 
 const GlobalStyles = createGlobalStyle`
   ${resetStyles}
+
+  @font-face {
+    font-family: 'basiercircle-regular';
+    src: url(${require('../../../assets/font/basier/basiercircle-regular-webfont.woff')}) format('woff'),
+         url(${require('../../../assets/font/basier/basiercircle-regular-webfont.woff2')}) format('woff2')
+  }
+
+    @font-face {
+    font-family: 'basiercircle-bold';
+    src: url(${require('../../../assets/font/basier/basiercircle-bold-webfont.woff')}) format('woff'),
+         url(${require('../../../assets/font/basier/basiercircle-bold-webfont.woff2')}) format('woff2')
+  }
   
   html,
   body {
@@ -15,6 +27,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2, h3, h4, form legend {
+    font-family: ${typogrophySettings.base.header.font};
     line-height: ${typogrophySettings.base.header.lineHeight};
     margin-bottom: ${spacingSettings.sizes.xxs};
   }

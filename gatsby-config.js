@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   siteMetadata: {
@@ -19,31 +19,23 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['arvo', 'heebo']
-        }
-      }
-    },
     'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `src`, `images`)
-      }
+        path: path.join(__dirname, `src`, `images`),
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: path.join(__dirname, `src`, `markdown-files`)
-      }
+        path: path.join(__dirname, `src`, `markdown-files`),
+      },
     },
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp'
+    'gatsby-plugin-sharp',
   ],
 }
