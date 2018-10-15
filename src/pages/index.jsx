@@ -13,7 +13,9 @@ import Column from '../components/common/Container/Column/styled'
 const IndexPage = () => (
   <Layout>
     <Header paddingTop="xxl" paddingBottom="xxl">
-      <PageTitle title="Hallo, Wij zijn " highlight="Wavelight" />
+      <PageTitle highlight=" Wavelight">
+        Hallo, <br /> Wij zijn
+      </PageTitle>
       <Intro content="En wij zijn druk bezig met onze eigen website.." />
     </Header>
     <Container as="section" paddingBottom="xxl">
