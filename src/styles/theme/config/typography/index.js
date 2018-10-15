@@ -1,5 +1,5 @@
 const scaleRatio = 1.3
-const baseFontSize = '16px'
+const baseFontSize = '18px'
 
 const typographySettings = {
   base: {
