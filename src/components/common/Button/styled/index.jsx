@@ -7,8 +7,8 @@ export default styled.button`
   padding-bottom: ${p => p.theme.sizes.xs};
   padding-left: ${p => p.theme.sizes.lg};
   margin-bottom: ${p => p.theme.sizes.sm};
-  color: ${p => p.theme.colors.primary};
-  background: ${p => p.theme.colors.white};
+  color: ${p => p.theme.main.primary};
+  background: ${p => p.theme.main.white};
   border-radius: 30px;
   transition: all 150ms ease-in-out;
 
@@ -24,22 +24,20 @@ export default styled.button`
     border-radius: 30px;
 
     box-shadow: 0px 2px 2px rgba(61, 118, 234, 0.2),
-      0px 4px 4px rgba(61, 118, 234, 0.4), 0px 8px 8px rgba(61, 118, 234, 0.2),
+      0px 4px 4px rgba(61, 118, 234, 0.2), 0px 8px 8px rgba(61, 118, 234, 0.2),
       0px 8px 8px rgba(61, 118, 234, 0.2), 0px 16px 16px rgba(61, 118, 234, 0.2),
       0px 32px 32px rgba(61, 118, 234, 0.2);
     transition: opacity 150ms ease-in-out;
   }
 
-  &:hover {
-    &:before {
-      opacity: 1;
-    }
+  &:hover:before {
+    opacity: 1;
   }
 
   ${p =>
     p.inverted &&
     css`
-      color: ${p => p.theme.colors.white};
-      background: ${p => p.theme.colors.primary};
+      color: ${p => p.theme.main.white};
+      background: ${p => p.theme.main.primary};
     `};
 `

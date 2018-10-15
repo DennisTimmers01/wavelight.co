@@ -6,6 +6,9 @@ import { ThemeProvider } from 'styled-components'
 
 import GlobalStyles from '../styles/theme/global'
 import theme from '../styles/theme'
+import checkIfDay from '../utils/DarkModeToggle'
+
+const currentTheme = checkIfDay()
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,14 +30,14 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
-        <html lang="en" />
+          <html lang="en" />
         </Helmet>
         <ThemeProvider theme={theme}>
           <>
-          <GlobalStyles />
-          <div>{children}</div>
+            <GlobalStyles theme={theme[currentTheme]} />
+            <div>{children}</div>
           </>
-        </ThemeProvider>    
+        </ThemeProvider>
       </>
     )}
   />

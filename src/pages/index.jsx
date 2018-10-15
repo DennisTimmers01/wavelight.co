@@ -13,8 +13,8 @@ import Column from '../components/common/Container/Column/styled'
 const IndexPage = () => (
   <Layout>
     <Header paddingTop="xxl" paddingBottom="xxl">
-      <PageTitle highlight=" Wavelight">
-        Hallo, <br /> Wij zijn
+      <PageTitle highlight=" wavelight">
+        Hallo, <br /> wij zijn
       </PageTitle>
       <Intro content="En wij zijn druk bezig met onze eigen website.." />
     </Header>

@@ -26,6 +26,12 @@ const GlobalStyles = createGlobalStyle`
     font-size: ${typogrophySettings.sizes.default};
   }
 
+  body {
+    background: ${p => p.theme.background};
+    color: ${p => p.theme.textColor};
+    transition: all 1s ease-in-out;
+  }
+
   h1, h2, h3, h4, form legend {
     font-family: ${typogrophySettings.base.header.font};
     line-height: ${typogrophySettings.base.header.lineHeight};
