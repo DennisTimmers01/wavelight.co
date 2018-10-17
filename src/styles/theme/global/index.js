@@ -48,8 +48,8 @@ const GlobalStyles = createGlobalStyle`
   a {
     display: inline-block;
     text-decoration: none;
-    color: ${p => p.theme.white}
-    border-bottom: 1px solid ${p => p.theme.primary}
+    color: ${p => p.theme.textColor};
+    border-bottom: 1px solid ${p => p.theme.primary};
   }
 
   h2, h3, h4 {
