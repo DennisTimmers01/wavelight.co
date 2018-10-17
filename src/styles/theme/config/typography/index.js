@@ -1,4 +1,6 @@
-const scaleRatio = 1.3
+import { calcFontSize } from './utils'
+
+const scaleRatio = 1.25
 const baseFontSize = '18px'
 
 const typographySettings = {
@@ -14,17 +16,12 @@ const typographySettings = {
   },
   sizes: {
     default: baseFontSize,
-    md: `${1 * scaleRatio}em`,
-    lg: `${1 * scaleRatio * scaleRatio}em`,
-    xl: `${1 * scaleRatio * scaleRatio * scaleRatio}em`,
-    xxl: `${1 * scaleRatio * scaleRatio * scaleRatio}em`,
-    xxxl: `${1 * scaleRatio * scaleRatio * scaleRatio * scaleRatio}em`,
-    xxxxl: `${1 *
-      scaleRatio *
-      scaleRatio *
-      scaleRatio *
-      scaleRatio *
-      scaleRatio}em`,
+    md: `${calcFontSize(scaleRatio, 1)}em`,
+    lg: `${calcFontSize(scaleRatio, 2)}em`,
+    xl: `${calcFontSize(scaleRatio, 3)}em`,
+    xxl: `${calcFontSize(scaleRatio, 4)}em`,
+    xxxl: `${calcFontSize(scaleRatio, 5)}em`,
+    xxxxl: `${calcFontSize(scaleRatio, 6)}em`,
   },
 }
 
