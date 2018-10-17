@@ -12,7 +12,7 @@ const theme = {
   dark: {
     primary: '#3D77EA',
     primaryLight: '#B1B1B1',
-    background: '#31313a',
+    background: '#2d2d2d',
     textColor: '#FFFFFF',
     white: '#FFFFFF',
   },
