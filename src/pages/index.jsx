@@ -9,6 +9,7 @@ import Intro from '../components/common/Intro'
 import Button from '../components/common/Button'
 import List from '../components/common/List'
 import Column from '../components/common/Container/Column/styled'
+import Title from '../components/common/Title'
 
 const IndexPage = () => (
   <Layout>
@@ -35,7 +36,7 @@ const IndexPage = () => (
     </Container>
     <Footer>
       <Container as="header" paddingBottom="md">
-        <PageTitle title="Laten we praten!" />
+        <Title title="Laten we praten!" element="h2" />
         <Intro content="Vinden we leuk" />
       </Container>
       <Container withFlex>
