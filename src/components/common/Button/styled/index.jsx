@@ -22,12 +22,10 @@ export default styled.button`
     left: 0;
     opacity: 0;
     border-radius: 30px;
-
     box-shadow: 0px 2px 2px rgba(61, 118, 234, 0.2),
-      0px 4px 4px rgba(61, 118, 234, 0.2), 0px 8px 8px rgba(61, 118, 234, 0.2),
       0px 8px 8px rgba(61, 118, 234, 0.2), 0px 16px 16px rgba(61, 118, 234, 0.2),
       0px 32px 32px rgba(61, 118, 234, 0.2);
-    transition: opacity 150ms ease-in-out;
+    transition: opacity 250ms ease-in-out;
   }
 
   &:hover:before {
