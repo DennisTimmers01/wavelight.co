@@ -1,6 +1,6 @@
 import { calcFontSize } from './utils'
 
-const scaleRatio = 1.25
+const scaleRatio = 1.22
 const baseFontSize = '18px'
 
 const typographySettings = {
