@@ -24,6 +24,16 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${typogrophySettings.base.body.font};
     line-height: ${typogrophySettings.base.body.lineHeight};
     font-size: ${typogrophySettings.sizes.default};
+
+    @media screen and (min-width: 320px) {
+      font-size: calc(${
+        typogrophySettings.sizes.default
+      } + 4 * ((100vw - 320px) / 680));
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 22px;
+    }
   }
 
   body {
