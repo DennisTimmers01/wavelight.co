@@ -59,7 +59,7 @@ const GlobalStyles = createGlobalStyle`
     display: inline-block;
     text-decoration: none;
     color: ${p => p.theme.textColor};
-    border-bottom: 1px solid ${p => p.theme.primary};
+    border-bottom: 2px solid ${p => p.theme.primary};
   }
 
   h2, h3, h4 {
