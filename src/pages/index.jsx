@@ -46,7 +46,7 @@ const IndexPage = () => (
               <a href="mailto:hello@wavelight.co">hello@wavelight.co</a>
             </li>
             <li>
-              <a href="tel:0611451081">+31 6 11 45 10 81</a>
+              <a href="tel:0611451081">010 26 13 722</a>
             </li>
           </List>
         </Column>
