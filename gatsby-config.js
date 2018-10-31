@@ -12,7 +12,7 @@ module.exports = {
       options: {
         name: 'gatsby-starter-default',
         short_name: 'starter',
-        start_url: '/404',
+        start_url: '/',
         background_color: '#FFFFFF',
         theme_color: '#FFFFFF',
         display: 'minimal-ui',
